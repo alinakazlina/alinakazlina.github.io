@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Задание 1</title>
+        <script>
+		function addition() {
+			var a = parseInt(document.getElementById('a').value);
+			var b = parseInt(document.getElementById('b').value)
+			var c = a - b;
+            if (c==0) 
+            {
+                document.getElementById('result').innerHTML = "Числа равны";
+             } else 
+             {
+                document.getElementById('result').innerHTML = "Числа не равны";
+            }
+		}
+		</script>
+	</head>
+	<body>
+			<input id="a" type="number" value="">
+            <br>
+            <br>
+			<input id="b" type="number" value="">
+            <br>
+            <br>
+			<input type="button" value="Сравнить числа" onclick="addition();">
+            <br>
+            <br>
+		
+	<div id="result"></div>
+	</body>
+</html>
